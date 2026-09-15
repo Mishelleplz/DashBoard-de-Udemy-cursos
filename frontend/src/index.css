@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-udemy-bg text-slate-200 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-udemy-border bg-udemy-panel;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-udemy-border bg-udemy-bg px-3 py-2 text-sm text-slate-200
+      outline-none transition focus:border-udemy-accent;
+  }
+
+  .chip {
+    @apply rounded-full border border-udemy-border px-2 py-0.5 text-xs text-slate-300;
+  }
+}

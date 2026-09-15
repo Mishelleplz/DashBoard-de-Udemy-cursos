@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@tanstack/react-table": "^9.2.4",
+    "chart.js": "^4.5.1",
+    "motion": "^13.3.0",
+    "nuqs": "^2.10.1",
+    "react": "^19.3.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.3.0",
+    "temporal-polyfill": "^1.0.5",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@oxlint/binding-linux-x64-gnu": "^1.83.0",
+    "@rolldown/binding-linux-x64-gnu": "^1.2.8",
+    "@types/node": "^24.13.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.0",
+    "oxlint": "^1.83.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "name": "udemy-analytics-dashboard",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint src",
+    "typecheck": "tsc -b --noEmit",
+    "etl": "python3 -m udemy_etl.cli"
+  }
+}
