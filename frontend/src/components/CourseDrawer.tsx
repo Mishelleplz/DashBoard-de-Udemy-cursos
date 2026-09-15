@@ -86,6 +86,22 @@ export function CourseDrawer({ course, onClose }: Props) {
                 </div>
               )}
 
+              {course.objectives.length > 0 && (
+                <section>
+                  <h3 className="mb-2 text-sm font-semibold text-slate-200">
+                    Lo que aprenderás ({course.objectives.length})
+                  </h3>
+                  <ul className="space-y-1 text-sm text-slate-400">
+                    {course.objectives.map((objective) => (
+                      <li key={objective} className="flex gap-2">
+                        <span className="text-udemy-accent2">•</span>
+                        <span>{objective}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               {course.exams.length > 0 && (
                 <section>
                   <h3 className="mb-2 text-sm font-semibold text-slate-200">
